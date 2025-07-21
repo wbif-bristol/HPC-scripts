@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Check if we need to install conda
-if [ -d "${WORK}/miniconda3/e" ]; then
+if [ -d "${WORK}/miniconda3/" ]; then
     # Conda is installed and recognised
     echo "Conda is already available"
 else
