@@ -20,7 +20,7 @@ else
         rm ${WORK}/Miniconda3-latest-Linux-x86_64.sh
 
         # Getting script to initialise Conda
-        wget https://raw.githubusercontent.com/wbif-bristol/HPC-scripts/refs/heads/main/scripts/initConda.sh
+        wget https://raw.githubusercontent.com/wbif-bristol/HPC-scripts/refs/heads/main/scripts/init_conda.sh
 
         # Creating Cellpose environment
         ${WORK}/initConda.sh
