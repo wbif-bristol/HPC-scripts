@@ -19,7 +19,7 @@ else
 
         # Getting script to initialise Conda
         wget https://raw.githubusercontent.com/wbif-bristol/HPC-scripts/refs/heads/main/scripts/init_conda.sh -O ${WORK}/init_conda.sh
-        chmod u+x init_conda.sh
+        chmod u+x ${WORK}/init_conda.sh
         
     fi
 fi
