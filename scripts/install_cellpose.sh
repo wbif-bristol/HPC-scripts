@@ -21,6 +21,7 @@ else
 
         # Getting script to initialise Conda
         wget https://raw.githubusercontent.com/wbif-bristol/HPC-scripts/refs/heads/main/scripts/init_conda.sh
+        chmod +x init_conda.sh
 
         # Creating Cellpose environment
         ${WORK}/initConda.sh
