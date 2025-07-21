@@ -7,6 +7,12 @@ ${WORK}/install_conda.sh
 rm ${WORK}/install_conda.sh
 
 # Creating Cellpose environment
-conda create --name cellpose python=3.10 -y
-conda activate cellpose
-pip install cellpose
+if [ -d "${WORK}/miniconda3/envs/cellpose" ]; then
+    echo "Cellpose environment exists"
+
+else
+    conda create --name cellpose python=3.10 -y
+    conda activate cellpose
+    pip install cellpose
+
+fi
