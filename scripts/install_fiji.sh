@@ -6,7 +6,7 @@ if [ -d "${WORK}/Fiji.app" ]; then
 
 else
     echo "Installing Fiji"
-    wget https://downloads.imagej.net/fiji/stable/fiji-stable-linux64-jdk.zip -O ${WORK}/fiji-stable-linux-jdk.zip
+    wget https://downloads.imagej.net/fiji/stable/fiji-stable-linux64-jdk.zip -O ${WORK}/fiji-stable-linux64-jdk.zip
     unzip ${WORK}/fiji-stable-linux64-jdk.zip
     rm ${WORK}/fiji-stable-linux64-jdk.zip
 
