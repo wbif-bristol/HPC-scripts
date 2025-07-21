@@ -7,7 +7,6 @@ ${WORK}/install_conda.sh
 rm ${WORK}/install_conda.sh
 
 # Creating Cellpose environment
-${WORK}/initConda.sh
 conda create --name cellpose python=3.10 -y
 conda activate cellpose
 pip install cellpose
