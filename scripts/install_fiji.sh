@@ -14,5 +14,5 @@ fi
 
 ${WORK}/Fiji.app/ImageJ-linux64 --headless --update add-update-site MIA https://sites.imagej.net/ModularImageAnalysis/
 ${WORK}/Fiji.app/ImageJ-linux64 --headless --update add-update-site IJPB-plugins https://sites.imagej.net/IJPB-plugins
-${WORK}/Fiji.app/ImageJ-linux64 --headless --update add-update-site PTBIOP https://sites.imagej.net/PTBIOP
+${WORK}/Fiji.app/ImageJ-linux64 --headless --update add-update-site PTBIOP https://biop.epfl.ch/Fiji-Update/
 ${WORK}/Fiji.app/ImageJ-linux64 --headless --update update
