@@ -14,7 +14,7 @@ if [ -d "${WORK}/miniconda3/envs/cellpose" ]; then
 
 else
     conda create --name cellpose python=3.10 -y
-    conda activate cellpose
+    conda activate cellpose$1
 
     if [ "$1" == "" ]; then
         echo "Using latest Cellpose"
