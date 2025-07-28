@@ -9,11 +9,11 @@ ${WORK}/install_conda.sh
 rm ${WORK}/install_conda.sh
 
 # Creating Cellpose environment
-if [ -d "${WORK}/miniconda3/envs/cellpose" ]; then
+if [ -d "${WORK}/miniconda3/envs/cellpose$1" ]; then
     echo "Cellpose environment exists"
 
 else
-    conda create --name cellpose python=3.10 -y
+    conda create --name cellpose$1 python=3.10 -y
     conda activate cellpose$1
 
     if [ "$1" == "" ]; then
@@ -21,7 +21,7 @@ else
         pip install cellpose
     else
         echo "Using Cellpose version $1"
-        pip install cellpose==$1ß
+        pip install cellpose==$1
     fi
 
     pip uninstall torch -y
