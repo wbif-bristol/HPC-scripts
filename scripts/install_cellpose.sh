@@ -14,5 +14,7 @@ else
     conda create --name cellpose python=3.10 -y
     conda activate cellpose
     pip install cellpose
+    pip uninstall torch -y
+    pip install torch torchvision --index-url https://download.pytorch.org/whl/cu124
 
 fi
