@@ -8,7 +8,7 @@ rm ${WORK}/install_conda.sh
 
 # Creating Cellpose environment
 if [ -d "${WORK}/miniconda3/envs/cellpose$1" ]; then
-    echo "Cellpose environment exists"
+    echo "Cellpose$1 environment exists"
 
 else
     conda create --name cellpose$1 python=3.10 -y
