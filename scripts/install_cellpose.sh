@@ -6,6 +6,9 @@ chmod +x ${WORK}/install_conda.sh
 ${WORK}/install_conda.sh
 rm ${WORK}/install_conda.sh
 
+# Adding conda to shell
+source $(conda info --base)/etc/profile.d/conda.sh
+
 # Creating Cellpose environment
 if [ -d "${WORK}/miniconda3/envs/cellpose$1" ]; then
     echo "Cellpose$1 environment exists"
